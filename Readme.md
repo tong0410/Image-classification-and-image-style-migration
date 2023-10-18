@@ -8,7 +8,7 @@ VGG19 is a deep network with 19 layers, including 16 convolutional layers follow
 
 While VGG19 and similar deep architectures have been surpassed by more recent models like ResNet, Inception, and Transformer-based networks, VGG19 remains an important milestone in the development of deep learning models for computer vision tasks. Its simplicity and effectiveness have made it a popular choice for educational purposes and as a benchmark for comparing the performance of new models.
 
- ![image](https://github.com/tong0410/Image-classification-and-image-style-migration/tree/main/images/1.png)
+ ![image]([Image-classification-and-image-style-migration/images/1.png at main · tong0410/Image-classification-and-image-style-migration (github.com)](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/1.png))
 
  
 

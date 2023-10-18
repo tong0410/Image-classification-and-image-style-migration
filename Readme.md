@@ -1,5 +1,7 @@
 # introduction
 
+[toc]
+
 ***\*1.1 VGG19\****
 
 VGG19 is a deep convolutional neural network architecture that was introduced as part of the Visual Geometry Group (VGG) project at the University of Oxford. It was proposed by Karen Simonyan and Andrew Zisserman in their paper titled "Very Deep Convolutional Networks for Large-Scale Image Recognition," which was published in 2014. VGG19 is an extension of the earlier VGG16 model, and the "19" in its name refers to the total number of layers, including both convolutional and fully connected layers.
@@ -8,7 +10,7 @@ VGG19 is a deep network with 19 layers, including 16 convolutional layers follow
 
 While VGG19 and similar deep architectures have been surpassed by more recent models like ResNet, Inception, and Transformer-based networks, VGG19 remains an important milestone in the development of deep learning models for computer vision tasks. Its simplicity and effectiveness have made it a popular choice for educational purposes and as a benchmark for comparing the performance of new models.
 
- ![image]([Image-classification-and-image-style-migration/images/1.png at main · tong0410/Image-classification-and-image-style-migration (github.com)](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/1.png))
+ ![image](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/1.png)
 
  
 

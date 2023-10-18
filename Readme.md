@@ -34,21 +34,21 @@ I calculate the loss of this Neural Network. I divide the total loss into two pa
 
 For content loss, the soft-margin SVM is trained by solving a quadratic programming problem, which is expressed in the dual form as follows:
 
-![img](file:///C:\Users\32018\AppData\Local\Temp\ksohtml25072\wps2.jpg) 
+![image](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/2.png)
 
 I define the squared-error loss between the two feature representations. Fij  represents the jth output value of the ith feature map of the generated images. The content loss described the content difference between the original image and the generated image.
 
 For style loss, I use Gram Matrix to calculated the similarity of two images texture for feature extraction: 
 
-![img](file:///C:\Users\32018\AppData\Local\Temp\ksohtml25072\wps3.jpg) 
+![image](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/3.png)
 
 To generate a texture that matches the style of a given image, I use gradient descent from a white noise image to find another image that matches the style representation of the original image. And the formula below is similar to the formula which calculates the content loss. The difference is the weight of the formula. It is much more depending on the shape of the matrix(M) and channels(N), where M is the height times the width of the feature map:
 
-![img](file:///C:\Users\32018\AppData\Local\Temp\ksohtml25072\wps4.jpg) 
+![image](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/4.png) 
 
 As for total loss, I merge content loss and style loss together. At the same time, I set two parameters. In the research, I change different The ratio between the two to achieve the best image transfer effect. (I assume that α as 1, β as 100 to train the whole Neural Network at first.)
 
-![img](file:///C:\Users\32018\AppData\Local\Temp\ksohtml25072\wps5.jpg) 
+![image](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/5.png) 
 
 where α and β are the weighting factors for content and style reconstruction respectively.
 
@@ -66,7 +66,7 @@ When I start the first fifty iterations. The style loss reaches 176.005219, and 
 
  
 
-![img](file:///C:\Users\32018\AppData\Local\Temp\ksohtml25072\wps6.jpg) 
+![image](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/6.png) 
 
 Figure 1: the VGG19 net code
 
@@ -84,7 +84,7 @@ Input and Output Here is the input for a portrait of a man as the content image.
 
 Result 1
 
-![img](file:///C:\Users\32018\AppData\Local\Temp\ksohtml25072\wps7.jpg) 
+![image](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/7.png) 
 
 Figure 2: Style transfer result 1
 
@@ -92,7 +92,7 @@ Figure 2: Style transfer result 1
 
  
 
-![img](file:///C:\Users\32018\AppData\Local\Temp\ksohtml25072\wps8.jpg) 
+![image](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/8.png) 
 
 Figure 3: Style transfer loss 1
 
@@ -106,7 +106,7 @@ Another results:
 
  
 
-![img](file:///C:\Users\32018\AppData\Local\Temp\ksohtml25072\wps9.jpg) 
+![image](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/9.png) 
 
 Figure 4: Style transfer result 2
 
@@ -114,19 +114,19 @@ Figure 4: Style transfer result 2
 
  
 
-![img](file:///C:\Users\32018\AppData\Local\Temp\ksohtml25072\wps10.jpg) 
+![image](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/10.png) 
 
 Figure 5: Style transfer loss 2
 
  
 
-![img](file:///C:\Users\32018\AppData\Local\Temp\ksohtml25072\wps11.jpg) 
+![image](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/11.png) 
 
 Figure 6: Style transfer result 3
 
  
 
-![img](file:///C:\Users\32018\AppData\Local\Temp\ksohtml25072\wps12.jpg) 
+![image](https://github.com/tong0410/Image-classification-and-image-style-migration/blob/main/images/12.png) 
 
 Figure 7: Style transfer loss 3
 
